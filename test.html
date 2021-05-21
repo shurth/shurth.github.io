@@ -3,7 +3,9 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene vr-mode-ui="enabled: false;"
+	    renderer="logarithmicDepthBuffer: true;"
+	    embedded>
     
     		<a-image src="https://arjs-cors-proxy.herokuapp.com/https://shurth.github.io/musk.jpg" position="-1 0.5 -5"></a-image>
 	    	<a-text value="Do it like Musk" color="red" position="-1 0.5 -3"></a-text>
